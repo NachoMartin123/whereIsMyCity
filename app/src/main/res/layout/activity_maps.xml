@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.nacho.actividad3.MapsActivity">
+
+    <RelativeLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.example.nacho.actividad3.MapsActivity">
+
+        <TextView
+            android:id="@+id/txtAficion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/button8"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/button8"
+            android:layout_toLeftOf="@+id/btnAficion"
+            android:layout_toRightOf="@+id/button8"
+            android:layout_toStartOf="@+id/btnAficion"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="aficion"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/btnAficion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@android:drawable/ic_lock_silent_mode_off" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="405dp"
+        tools:context="com.example.nacho.actividad3.MapsActivity" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Boton1" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Boton2" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Boton3" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnOpciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@android:drawable/ic_lock_silent_mode_off" />
+</LinearLayout>
